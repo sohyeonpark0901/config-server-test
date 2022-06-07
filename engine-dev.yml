@@ -4,9 +4,7 @@ server:
 spring:
   application:
     name: engine
-  cloud:
-    config:
-      name: ecommerce
+  profiles: dev
   config:
     import: optional:configserver:http://localhost:8888
 
